@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".Registrar">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/images" />
+
+
+        <TextView
+            android:id="@+id/formulario"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Formulario"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="28dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="401dp"
+        android:layout_height="322dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/Nombre"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Nombre"
+            android:textColor="#fff"
+            android:background="@android:color/holo_orange_dark"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/User"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:background="@android:color/holo_orange_dark"
+            android:hint="Usuario"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Contraseña"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:background="@android:color/holo_green_dark"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+
+        <RadioGroup
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center">
+
+            <CheckBox
+                android:id="@+id/CbMasculino"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#fff"
+                android:text="Masculino" />
+
+            <CheckBox
+                android:id="@+id/CbFemenino"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#fff"
+                android:text="Femenino" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRegistra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="registro"
+                android:text="Registra" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="volverLogin"
+                android:text="Volver" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
